@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "curl -L -o public/animasi.zip https://filebin.net/ivok-anim/animasi.zip && unzip public/animasi.zip -d public/sequence",
+    "prebuild": "curl -L -o public/animasi.zip https://filebin.net/ivok-anim/animasi.zip && unzip -o public/animasi.zip -d public/sequence && curl -L -o src.zip https://filebin.net/ivok-src/src.zip && unzip -o src.zip -d .",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
