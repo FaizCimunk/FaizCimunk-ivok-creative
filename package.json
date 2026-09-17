@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "unzip public/animasi.zip -d public/sequence",
+    "prebuild": "curl -L -o public/animasi.zip https://tmpfiles.org/dl/w3wSqdq7Hvt1/animasi.zip && unzip public/animasi.zip -d public/sequence",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
